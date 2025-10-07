@@ -51,7 +51,7 @@ pipeline {
             steps {
                 sh """
 				    export KUBECONFIG=$KUBECONFIG
-					kubectl apply -f k8s/deployment.yaml
+					kubectl apply -f deployment.yaml
 				  """
                 }
             }
